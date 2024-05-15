@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div2-form{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: auto;
+            gap: 10px;
+
+        }
+        .div2-form span{
+            display: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+   <hr>
+    <div class="div1"><h2>Interactive Counter</h2>
+    <p class="value">00</p>
+    <button onclick="incre()">Increment</button><button onclick="decre()">Decrement</button>
+    
+    </div>
+   <hr>
+    <div class="div2"><h2>Interactive form</h2>
+    
+   <form action="" class="div2-form">
+    <input type="text" placeholder="enter your name">
+    <span>please fill the details</span><input type="text" placeholder="enter your email">
+    <span>please fill the details</span><input type="text" placeholder="enter your age">
+    <span>please fill the details</span><button onclick="formValid()">submit</button>
+   </form>
+    
+    </div>
+   <hr>
+    <div class="div3"><h2>Dynamic Element Creation</h2>
+    
+    
+    </div>
+   <hr>
+    <div class="div4"><h2>Event Handling</h2></div>
+   <hr>
+    <div class="div5"><h2>Dom Removal</h2>
+    <ul>
+        <li>hellooo</li>
+    </ul>
+    <button>click</button>
+    </div>
+   <hr>
+    <div class="div6"><h2>Element Attribute Manipulation</h2></div>
+
+    <script>
+
+//function for 1st question from here to 
+let inc=document.querySelectorAll(".div1 button")
+let zero=document.querySelector(".value")
+let a=0
+function incre(){
+
+    a++
+    a=(a<10)?"0"+a:a
+        zero.innerText=a
+    }
+    function decre(){
+
+        
+        if(a>0){
+        a--
+    a=(a<10)?"0"+a:a
+    zero.innerText=a
+        }
+        
+           
+        }
+
+
+// 1st question here
+
+//function for  2nd question from here to 
+let input=document.querySelectorAll(".div2-form input")
+let span=document.querySelectorAll(".div2-form span")
+console.log(input)
+console.log(span[0])
+function formvalid (){
+   
+    if(input.value===""){
+span[0].style.display="block"
+    }else{
+        alert("ok")
+    }
+}
+
+//2nd quesstion here
+
+//function for  3nd question from here to 
+
+
+
+//2nd quesstion here
+
+//function for  4nd question from here to 
+
+
+
+//2nd quesstion here
+
+//function for  5nd question from here to 
+
+
+
+//2nd quesstion here
+
+
+//function for  6nd question from here to 
+
+
+
+//2nd quesstion here
+
+    </script>
+</body>
+</html>
